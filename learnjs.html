@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.3.4.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('.mybtn').click(function()
+			{
+				v_value=$('#test').val();
+				console.log(v_value);
+				if (v_value=='') 
+				{
+					$('label').html('enter your value');
+					$('#test').css('borderColor','red');
+				}
+			});
+
+				
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="test">
+	<label></label>
+	<br><br>
+	<input type="button" value="submit" class="mybtn">
+
+</body>
+</html>
